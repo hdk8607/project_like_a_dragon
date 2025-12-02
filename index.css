@@ -1,0 +1,99 @@
+nav {
+    color: white;
+    position: fixed;
+}
+
+body {
+    background: linear-gradient(to left, #ea0101, #700202);
+    color: white;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container {
+    margin: 0 auto;
+}
+
+header {
+    /* The code after the image url makes sure the image doesn't duplicate offscreen and stretches to fill the needed background */
+    background: url("images/yakuza0_intro.jpg") no-repeat center center;
+    width: 100%;
+    height: 680px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+    border: 1px solid darkred;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    background-color: #ff0000;
+    color: white;
+    width: 248px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Code for the video below*/
+.video-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.end {
+    color: lightgray;
+}
+
+#esrb {
+    text-align: center;
+}

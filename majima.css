@@ -1,0 +1,103 @@
+nav {
+    color: white;
+    position: fixed;
+}
+
+body {
+    background: linear-gradient(to left, #ea0101, #700202);
+    color: white;
+}
+
+#container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 50px 300px 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+    border: 1px solid darkred;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    background-color: #ff0000;
+    color: white;
+    width: 248px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    float: right;
+    text-align: center;
+    border: white solid 2px;
+    padding: 4px;
+    overflow: auto;
+    width: 150px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+figure {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.end {
+    color: lightgray;
+    border: none;
+}

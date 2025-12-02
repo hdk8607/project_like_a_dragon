@@ -1,0 +1,91 @@
+nav {
+    color: white;
+    position: fixed;
+}
+
+body {
+    background: linear-gradient(to left, #ea0101, #700202);
+    color: white;
+}
+
+/* Organized the way this page looks using the code below */
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+}
+
+#container {
+    margin: 0 auto;
+    display: grid;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+    border: 1px solid darkred;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    background-color: #ff0000;
+    color: white;
+    width: 248px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    border: white solid 2px;
+    padding: 4px;
+    overflow: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+.end {
+    color: lightgray;
+    border: none;
+}
